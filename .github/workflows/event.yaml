@@ -3,6 +3,9 @@ on:
   push:
     branches:
     - test
+  issues:
+    types:
+    - opened
   # schedule:
   # - cron: '*/5 * * * *' #run every five minutes
 jobs:
