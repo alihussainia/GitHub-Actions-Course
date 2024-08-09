@@ -2,12 +2,13 @@ name: Push Events
 on: 
   push:
     branches:
-    - main
     - test
+  schedule:
+  - cron: '*/5 * * * *' #run every five minutes
 jobs:
   show-info:
     runs-on: ubuntu-latest
     steps:
     - name: info
       run: |
-        echo "This is a push event on all the branches"
+        echo "This is a scheduled event at $(date)"
