@@ -3,8 +3,8 @@ on:
   push:
     branches:
     - test
-  schedule:
-  - cron: '*/5 * * * *' #run every five minutes
+  # schedule:
+  # - cron: '*/5 * * * *' #run every five minutes
 jobs:
   show-info:
     runs-on: ubuntu-latest
